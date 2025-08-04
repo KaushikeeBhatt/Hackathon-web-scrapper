@@ -1,0 +1,170 @@
+{
+  "timestamp": "2025-08-04T05:06:53.630Z",
+  "totalCount": 14,
+  "hackathons": [
+    {
+      "title": "RevenueCat Shipaton 2025",
+      "link": "https://revenuecat-shipaton-2025.devpost.com/?ref_feature=challenge&ref_medium=discover",
+      "description": "",
+      "image": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/488/891/datas/medium_square.png",
+      "hostedBy": "RevenueCat"
+    },
+    {
+      "title": "Hack The Social Sites",
+      "link": "https://hackthesocial.devpost.com/?ref_feature=challenge&ref_medium=discover",
+      "description": "",
+      "image": "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/003/661/401/datas/medium_square.jpeg",
+      "hostedBy": "tankan"
+    },
+    {
+      "title": "UX Voyage",
+      "host": "NSUT",
+      "prize": "🏆\n15,000",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-688f84a567ddf_ux_voyage_700x400_.png",
+      "registered": "7\nRegistered",
+      "tags": [
+        "Designing",
+        "Engineering Students"
+      ],
+      "link": "https://unstop.com/competitions/1533012"
+    },
+    {
+      "title": "Altair Optimization Contest",
+      "host": "Manipal Institute of Technology (MIT), Manipal",
+      "prize": "🏆\n17,500",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-688c66f44b912_altair_logo.jpg",
+      "registered": "7\nRegistered",
+      "tags": [
+        "Designing",
+        "Engineering Students"
+      ],
+      "link": "https://unstop.com/competitions/1532067"
+    },
+    {
+      "title": "TechnoKick - RoboSoccer",
+      "host": "Indraprastha Institute of Information Technology (IIIT), Delhi",
+      "prize": "🏆\n1,00,000",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/688e8391471d2_IIIT_Delhi_logo.jpg",
+      "registered": "27\nRegistered",
+      "tags": [
+        "All",
+        "College Festival"
+      ],
+      "link": "https://unstop.com/competitions/1532815"
+    },
+    {
+      "title": "GAMEDΞON GameJam",
+      "host": "Indian Institute of Technology (IIT), Guwahati",
+      "prize": "🏆\n20,000",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-688e652c4793a_whatsapp_image_2025-08-03_at_00.35.51_06e22fe7.jpg",
+      "registered": "107\nRegistered",
+      "tags": [
+        "Designing",
+        "All"
+      ],
+      "link": "https://unstop.com/competitions/1532691"
+    },
+    {
+      "title": "Gamedeon GameJam",
+      "host": "Indian Institute of Technology (IIT), Guwahati",
+      "prize": "🏆\n20,000",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-688df1dd81073_r0qlfq.png",
+      "registered": "83\nRegistered",
+      "tags": [
+        "All",
+        "Designing"
+      ],
+      "link": "https://unstop.com/competitions/1532494"
+    },
+    {
+      "title": "Aditya Birla Group Stratos 2025",
+      "host": "Aditya Birla Group",
+      "prize": "",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-687e28e2ba35d_company_logo_150x150_px.jpg",
+      "registered": "1,173\nRegistered",
+      "tags": [],
+      "link": "https://unstop.com/competitions/1525312"
+    },
+    {
+      "title": "Logo Making Competition",
+      "host": "BigBrick",
+      "prize": "🏆\n500",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/688cfec08a18a_organisation_image-4MLG7NPd7T209783540V0ADnj7D7j.png",
+      "registered": "191\nRegistered",
+      "tags": [
+        "Designing",
+        "All"
+      ],
+      "link": "https://unstop.com/competitions/1532369"
+    },
+    {
+      "title": "PUREspectives : Poster Design Making Competition",
+      "host": "Indian Institute of Science Education and Research (IISER) Berhampur",
+      "prize": "",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-6887c7a1473e9_purespectives__1_.png",
+      "registered": "5\nRegistered",
+      "tags": [
+        "Designing",
+        "Poster Making"
+      ],
+      "link": "https://unstop.com/competitions/1529533"
+    },
+    {
+      "title": "Bloom Studio Unveiled: Logo & Tagline Challenge",
+      "host": "Indian Institute of Technology (IIT), Madras",
+      "prize": "🏆\n20,000",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-688c43585c0c5_embark_logo_without_background.png",
+      "registered": "250\nRegistered",
+      "tags": [
+        "All",
+        "Designing"
+      ],
+      "link": "https://unstop.com/competitions/1531997"
+    },
+    {
+      "title": "Manipal Makeathon: Make What’s Vital, Viral! Create with purpose, Innovate with Care!",
+      "host": "Manipal Health Enterprises",
+      "prize": "🏆\n2,50,000",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-688b144ce40dc_screenshot_2025-07-31_122848.png",
+      "registered": "3\nRegistered",
+      "tags": [
+        "Poster Making",
+        "All"
+      ],
+      "link": "https://unstop.com/competitions/1530600"
+    },
+    {
+      "title": "Startup Space",
+      "host": "Guru Jambheshwar University of Science and Technology, Hisar, Haryana",
+      "prize": "",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-688b1b447d65f_startup_space__700_x_400_px___1_.png",
+      "registered": "145\nRegistered",
+      "tags": [
+        "All",
+        "College Festival"
+      ],
+      "link": "https://unstop.com/competitions/1530197"
+    },
+    {
+      "title": "IdeationX 2.0",
+      "host": "SBI Life",
+      "prize": "",
+      "timeLeft": "",
+      "image": "https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-6874a33a3ae41_ideation_logo-01.png",
+      "registered": "28,755\nRegistered",
+      "tags": [],
+      "link": "https://unstop.com/competitions/1142539"
+    }
+  ]
+}

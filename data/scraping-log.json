@@ -1,0 +1,48 @@
+[
+  {
+    "timestamp": "2025-08-03T12:01:36.178Z",
+    "totalHackathons": 18,
+    "sources": {
+      "devpost": 6,
+      "unstop": 12,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T05:05:31.324Z",
+    "totalHackathons": 21,
+    "originalCount": 21,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 19,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T05:06:19.826Z",
+    "totalHackathons": 29,
+    "originalCount": 29,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 27,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T05:06:53.630Z",
+    "totalHackathons": 14,
+    "originalCount": 18,
+    "duplicatesRemoved": 4,
+    "sources": {
+      "devpost": 2,
+      "unstop": 12,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  }
+]

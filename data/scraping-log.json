@@ -92,5 +92,53 @@
       "cumulus": 0,
       "allHackathons": 0
     }
+  },
+  {
+    "timestamp": "2025-08-04T10:51:42.233Z",
+    "totalHackathons": 10,
+    "originalCount": 10,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 7,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T11:19:49.222Z",
+    "totalHackathons": 10,
+    "originalCount": 10,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 7,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T11:31:19.661Z",
+    "totalHackathons": 10,
+    "originalCount": 10,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 7,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T11:35:38.816Z",
+    "totalHackathons": 10,
+    "originalCount": 10,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 7,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
   }
 ]

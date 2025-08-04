@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-08-04T07:20:22.800Z",
+  "timestamp": "2025-08-04T11:35:38.816Z",
   "totalCount": 10,
   "hackathons": [
     {
@@ -15,7 +15,10 @@
       ],
       "link": "https://unstop.com/competitions/1533012",
       "designRelevanceScore": 0.03896103896103896,
-      "source": "Legacy"
+      "source": "Legacy",
+      "status": "active",
+      "deadline": null,
+      "lastUpdated": "2025-08-04T11:35:38.814Z"
     },
     {
       "title": "PUREspectives : Poster Design Making Competition",
@@ -30,7 +33,10 @@
       ],
       "link": "https://unstop.com/competitions/1529533",
       "designRelevanceScore": 0.03896103896103896,
-      "source": "Legacy"
+      "source": "Legacy",
+      "status": "active",
+      "deadline": null,
+      "lastUpdated": "2025-08-04T11:35:38.814Z"
     },
     {
       "title": "Altair Optimization Contest",
@@ -45,7 +51,10 @@
       ],
       "link": "https://unstop.com/competitions/1532067",
       "designRelevanceScore": 0.025974025974025976,
-      "source": "Legacy"
+      "source": "Legacy",
+      "status": "active",
+      "deadline": null,
+      "lastUpdated": "2025-08-04T11:35:38.814Z"
     },
     {
       "title": "GAMEDΞON GameJam",
@@ -60,7 +69,10 @@
       ],
       "link": "https://unstop.com/competitions/1532691",
       "designRelevanceScore": 0.025974025974025976,
-      "source": "Legacy"
+      "source": "Legacy",
+      "status": "active",
+      "deadline": null,
+      "lastUpdated": "2025-08-04T11:35:38.814Z"
     },
     {
       "title": "Gamedeon GameJam",
@@ -75,7 +87,10 @@
       ],
       "link": "https://unstop.com/competitions/1532494",
       "designRelevanceScore": 0.025974025974025976,
-      "source": "Legacy"
+      "source": "Legacy",
+      "status": "active",
+      "deadline": null,
+      "lastUpdated": "2025-08-04T11:35:38.814Z"
     },
     {
       "title": "Logo Making Competition",
@@ -90,7 +105,10 @@
       ],
       "link": "https://unstop.com/competitions/1532369",
       "designRelevanceScore": 0.025974025974025976,
-      "source": "Legacy"
+      "source": "Legacy",
+      "status": "active",
+      "deadline": null,
+      "lastUpdated": "2025-08-04T11:35:38.815Z"
     },
     {
       "title": "Bloom Studio Unveiled: Logo & Tagline Challenge",
@@ -105,7 +123,10 @@
       ],
       "link": "https://unstop.com/competitions/1531997",
       "designRelevanceScore": 0.025974025974025976,
-      "source": "Legacy"
+      "source": "Legacy",
+      "status": "active",
+      "deadline": null,
+      "lastUpdated": "2025-08-04T11:35:38.815Z"
     },
     {
       "title": "RevenueCat Shipaton 2025",
@@ -118,7 +139,10 @@
         "Mobile"
       ],
       "source": "Devpost",
-      "designRelevanceScore": 0.012987012987012988
+      "designRelevanceScore": 0.012987012987012988,
+      "status": "active",
+      "deadline": null,
+      "lastUpdated": "2025-08-04T11:35:38.815Z"
     },
     {
       "title": "Hack The Social Sites",
@@ -132,7 +156,10 @@
         "Web"
       ],
       "source": "Devpost",
-      "designRelevanceScore": 0.012987012987012988
+      "designRelevanceScore": 0.012987012987012988,
+      "status": "active",
+      "deadline": null,
+      "lastUpdated": "2025-08-04T11:35:38.815Z"
     },
     {
       "title": "Lisk Builders Challenge: Round Two",
@@ -140,7 +167,10 @@
       "description": "Hackathon",
       "image": "https://assets.devfolio.co/users/6ceba037fc2c46acaa41f9c48455fdf0/avatar-99cb5048-3ae9-4c47-83ac-ef13592f8f19.jpeg",
       "source": "Devfolio",
-      "designRelevanceScore": 0.012987012987012988
+      "designRelevanceScore": 0.012987012987012988,
+      "status": "active",
+      "deadline": null,
+      "lastUpdated": "2025-08-04T11:35:38.815Z"
     }
   ]
 }

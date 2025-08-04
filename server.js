@@ -217,12 +217,30 @@ app.get('/api/stats', async (req, res) => {
     const logData = await fs.readFile(SCRAPING_LOG_FILE, 'utf8');
     const logs = JSON.parse(logData);
     
+    // Get current hackathon data for design analysis
+    const currentData = await loadHackathonsFromFile();
+    const designStats = currentData ? {
+      totalDesignHackathons: currentData.hackathons.length,
+      sources: currentData.hackathons.reduce((acc, h) => {
+        acc[h.source || 'Unknown'] = (acc[h.source || 'Unknown'] || 0) + 1;
+        return acc;
+      }, {}),
+      averageRelevanceScore: currentData.hackathons.length > 0 
+        ? (currentData.hackathons.reduce((sum, h) => sum + (h.designRelevanceScore || 0), 0) / currentData.hackathons.length).toFixed(3)
+        : 0,
+      topDesignHackathons: currentData.hackathons
+        .sort((a, b) => (b.designRelevanceScore || 0) - (a.designRelevanceScore || 0))
+        .slice(0, 5)
+        .map(h => ({ title: h.title, score: h.designRelevanceScore, source: h.source }))
+    } : null;
+    
     const stats = {
       totalScrapingSessions: logs.length,
       latestScraping: logs[logs.length - 1] || null,
       averageHackathonsPerSession: logs.length > 0 
         ? Math.round(logs.reduce((sum, log) => sum + log.totalHackathons, 0) / logs.length)
-        : 0
+        : 0,
+      designStats
     };
     
     res.json(stats);
@@ -281,7 +299,7 @@ async function startServer() {
     await ensureDataDirectory();
     
     // Start the server
-    app.listen(PORT, () => {
+    const server = app.listen(PORT, () => {
       console.log(`🚀 Design Hackathon API running on http://localhost:${PORT}`);
       console.log('📋 Available endpoints:');
       console.log(`   GET  /api/health     - Health check`);
@@ -291,10 +309,20 @@ async function startServer() {
       console.log(`   POST /api/cleanup    - Clean up duplicates`);
     });
     
-    // Perform initial scraping on startup
+    // Perform initial scraping on startup (non-blocking)
     console.log('🔄 Performing initial hackathon scraping...');
-    await scrapeAndSaveHackathons();
-    console.log('✅ Initial scraping completed!');
+    scrapeAndSaveHackathons()
+      .then(() => console.log('✅ Initial scraping completed!'))
+      .catch(err => console.error('❌ Initial scraping failed:', err));
+    
+    // Keep the server running
+    process.on('SIGINT', () => {
+      console.log('\n🛑 Shutting down server...');
+      server.close(() => {
+        console.log('✅ Server closed');
+        process.exit(0);
+      });
+    });
     
   } catch (error) {
     console.error('❌ Failed to start server:', error);

@@ -1,6 +1,7 @@
 // cumulusDesignCompetitions.js
 const puppeteer = require('puppeteer');
 const dayjs = require('dayjs');
+const { isDesignHackathon, getDesignRelevanceScore } = require('./designKeywords');
 
 async function scrapeCumulusDesignCompetitions() {
   const browser = await puppeteer.launch({ headless: true });
@@ -17,7 +18,8 @@ async function scrapeCumulusDesignCompetitions() {
       const title = item.querySelector('h3.entry-title')?.innerText.trim() || '';
       const link = item.querySelector('a')?.href || '';
       const metaText = item.querySelector('p.meta')?.innerText || '';
-      return { title, link, metaText };
+      const description = item.querySelector('.entry-content')?.innerText.trim() || '';
+      return { title, link, metaText, description };
     });
   });
 
@@ -29,16 +31,31 @@ async function scrapeCumulusDesignCompetitions() {
       const dateStr = match[1];
       const parsedDate = dayjs(dateStr);
       return parsedDate.isValid() && parsedDate.isAfter(today)
-        ? { title: item.title, link: item.link, applyBy: parsedDate.format('YYYY-MM-DD') }
+        ? { 
+            title: item.title, 
+            link: item.link, 
+            description: item.description,
+            applyBy: parsedDate.format('YYYY-MM-DD'),
+            source: 'Cumulus'
+          }
         : null;
     })
     .filter(Boolean);
 
-  console.log(`🎯 Found ${validCompetitions.length} upcoming competitions:`);
-  console.log(validCompetitions);
+  // Filter for design-related competitions only
+  const designCompetitions = validCompetitions.filter(competition => {
+    const isDesign = isDesignHackathon(competition);
+    if (isDesign) {
+      competition.designRelevanceScore = getDesignRelevanceScore(competition);
+    }
+    return isDesign;
+  });
+
+  console.log(`🎨 Cumulus: Found ${designCompetitions.length} design competitions out of ${validCompetitions.length} total`);
+  console.log(designCompetitions);
 
   await browser.close();
-  return validCompetitions;
+  return designCompetitions;
 }
 
 module.exports = scrapeCumulusDesignCompetitions;

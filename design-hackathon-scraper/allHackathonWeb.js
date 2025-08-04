@@ -2,6 +2,7 @@
 
 const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
+const { isDesignHackathon, getDesignRelevanceScore } = require('./designKeywords');
 
 async function scrapeAllHackathonsDesign() {
   const url = 'https://allhackathons.com/hackathons/?search=&status=open&location=online&themes=11';
@@ -38,9 +39,7 @@ async function scrapeAllHackathonsDesign() {
       tags.push($(tagEl).text().trim().toLowerCase());
     });
 
-    const hasDesign = tags.includes('design');
-
-    if (isFuture && hasDesign) {
+    if (isFuture) {
       hackathons.push({
         title,
         link: fullLink,
@@ -56,8 +55,18 @@ async function scrapeAllHackathonsDesign() {
   });
 
   await browser.close();
-  console.log(`✅ AllHackathons: Fetched ${hackathons.length} design hackathons`);
-  return hackathons;
+  
+  // Filter for design-related hackathons only
+  const designHackathons = hackathons.filter(hackathon => {
+    const isDesign = isDesignHackathon(hackathon);
+    if (isDesign) {
+      hackathon.designRelevanceScore = getDesignRelevanceScore(hackathon);
+    }
+    return isDesign;
+  });
+
+  console.log(`🎨 AllHackathons: Found ${designHackathons.length} design hackathons out of ${hackathons.length} total`);
+  return designHackathons;
 }
 
 module.exports = scrapeAllHackathonsDesign;

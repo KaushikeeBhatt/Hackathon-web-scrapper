@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const { isDesignHackathon, getDesignRelevanceScore } = require('./designKeywords');
 
 async function scrapeUnstopDesignHackathons(searchTerm = 'design', pages = 1) {
   const browser = await puppeteer.launch({ headless: 'new' });
@@ -30,7 +31,17 @@ async function scrapeUnstopDesignHackathons(searchTerm = 'design', pages = 1) {
           const tags = Array.from(card.querySelectorAll('.chip_text')).map(tag => tag.textContent.trim());
           const link = card.getAttribute('id')?.match(/_(\d+)/) ? `https://unstop.com/competitions/${RegExp.$1}` : '';
 
-          extracted.push({ title, host, prize, timeLeft, image, registered, tags, link });
+          extracted.push({ 
+            title, 
+            host, 
+            prize, 
+            timeLeft, 
+            image, 
+            registered, 
+            tags, 
+            link,
+            source: 'Unstop'
+          });
         });
 
         return extracted;
@@ -43,7 +54,19 @@ async function scrapeUnstopDesignHackathons(searchTerm = 'design', pages = 1) {
   }
 
   await browser.close();
-  return results;
+  
+  // Filter for design-related hackathons only
+  const designHackathons = results.filter(hackathon => {
+    const isDesign = isDesignHackathon(hackathon);
+    if (isDesign) {
+      hackathon.designRelevanceScore = getDesignRelevanceScore(hackathon);
+    }
+    return isDesign;
+  });
+
+  console.log(`🎨 Unstop: Found ${designHackathons.length} design hackathons out of ${results.length} total`);
+  
+  return designHackathons;
 }
 module.exports = scrapeUnstopDesignHackathons;
 

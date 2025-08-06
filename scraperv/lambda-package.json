@@ -1,0 +1,23 @@
+{
+  "name": "design-hackathon-lambda-scheduler",
+  "version": "1.0.0",
+  "description": "AWS Lambda function to schedule design hackathon scraping",
+  "main": "lambda-scheduler.js",
+  "scripts": {
+    "package": "zip -r lambda-scheduler.zip . -x '*.git*' 'node_modules/.cache/*'",
+    "deploy": "npm run package && aws lambda update-function-code --function-name design-hackathon-scheduler --zip-file fileb://lambda-scheduler.zip"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1450.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "aws",
+    "lambda",
+    "ec2",
+    "scraping",
+    "hackathon"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+} 

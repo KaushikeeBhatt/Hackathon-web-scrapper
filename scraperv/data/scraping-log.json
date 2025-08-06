@@ -1,0 +1,144 @@
+[
+  {
+    "timestamp": "2025-08-03T12:01:36.178Z",
+    "totalHackathons": 18,
+    "sources": {
+      "devpost": 6,
+      "unstop": 12,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T05:05:31.324Z",
+    "totalHackathons": 21,
+    "originalCount": 21,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 19,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T05:06:19.826Z",
+    "totalHackathons": 29,
+    "originalCount": 29,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 27,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T05:06:53.630Z",
+    "totalHackathons": 14,
+    "originalCount": 18,
+    "duplicatesRemoved": 4,
+    "sources": {
+      "devpost": 2,
+      "unstop": 12,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T05:54:22.122Z",
+    "totalHackathons": 14,
+    "originalCount": 14,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 12,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T05:57:46.204Z",
+    "totalHackathons": 9,
+    "originalCount": 9,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 7,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T05:59:39.943Z",
+    "totalHackathons": 9,
+    "originalCount": 9,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 7,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T07:20:22.800Z",
+    "totalHackathons": 10,
+    "originalCount": 10,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 7,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T10:51:42.233Z",
+    "totalHackathons": 10,
+    "originalCount": 10,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 7,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T11:19:49.222Z",
+    "totalHackathons": 10,
+    "originalCount": 10,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 7,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T11:31:19.661Z",
+    "totalHackathons": 10,
+    "originalCount": 10,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 7,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  },
+  {
+    "timestamp": "2025-08-04T11:35:38.816Z",
+    "totalHackathons": 10,
+    "originalCount": 10,
+    "duplicatesRemoved": 0,
+    "sources": {
+      "devpost": 2,
+      "unstop": 7,
+      "cumulus": 0,
+      "allHackathons": 0
+    }
+  }
+]

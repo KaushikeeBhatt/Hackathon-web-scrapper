@@ -1,0 +1,35 @@
+{
+  "name": "pixel-war-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Pixel War hackathon scraper",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "scrape": "node design-hackathon-scraper/allHackathon.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "cheerio": "^1.1.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3",
+    "p-limit": "^6.2.0",
+    "puppeteer": "^24.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "hackathon",
+    "scraper",
+    "design",
+    "api"
+  ],
+  "author": "Kaush",
+  "license": "MIT"
+}
